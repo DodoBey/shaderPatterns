@@ -3,11 +3,13 @@ This is created with the help of Bruno Simon and his amazing [Three.js Journey](
 
 
 ### Pattern 1 - Color Transition Blue and Pink
+
 <img width="755" alt="1" src="https:github.com/DodoBey/shaderPatterns/assets/77416196/870c4e4a-504c-4373-a0d9-eef75cc503b6">
 
 gl_FragColor = vec4(vUv, 1.0, 1.0);
 
 ### Pattern 2 - Color Transition Green and Orange
+
 <img width="732" alt="2" src="https:github.com/DodoBey/shaderPatterns/assets/77416196/6c8a089e-c7d0-42ef-b7b9-154dcf46b4ee">
 
 gl_FragColor = vec4(vUv, 0.0, 1.0);
