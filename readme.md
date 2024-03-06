@@ -1,4 +1,4 @@
-This is created with the help of Bruno Simon and his amazing [Three.js Journey](https:threejs-journey.com/). To learn more, check it out. Just wanted to keep them all here, I belive these patters are going to be useful to create something in the future, and added the pictures with some personal names to use them later when needed.
+This is created with the help of Bruno Simon and his amazing [Three.js Journey](https:threejs-journey.com/). To learn more, check it out. Just wanted to keep them all here and added the pictures with some personal names to use them later when needed.
 # Three.js Journey
 
 
