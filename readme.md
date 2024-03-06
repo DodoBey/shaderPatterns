@@ -3,28 +3,42 @@ This is created with the help of Bruno Simon and his amazing [Three.js Journey](
 
 
 ### Pattern 1 - Color Transition Blue and Pink
+
 gl_FragColor = vec4(vUv, 1.0, 1.0);
+<img width="755" alt="1" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/20399e3a-afbf-4270-aa0e-8b0c26cd3b6c">
 
 ### Pattern 2 - Color Transition Green and Orange
+
 gl_FragColor = vec4(vUv, 0.0, 1.0);
+<img width="732" alt="2" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/51549ea7-71b7-4718-88fb-0b7a6b4f54f2">
 
 ### Pattern 3 - Transition from black to white (Left to Right)
+<img width="590" alt="3" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/d75f0dd4-7f38-415a-9e40-11ff829d8d4a">
+
 float strength = vUv.x;\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
 ### Pattern 4 - Transition from black to white (Bottom to top)
+<img width="562" alt="4" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/e5d62aa8-2207-4db5-a19a-9a135e2c46df">
+
 float strength = vUv.y;\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
 ### Pattern 5 - Transition from black to white (Top to bottom)
+<img width="581" alt="5" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/2a9b9ff1-d981-43f7-87b9-29c167f377b5">
+
 float strength = 1.0 - vUv.y;\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
 ### Pattern 6 - Strong/faster transition from black to white (Bottom to top)
+<img width="515" alt="6" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/ed802f2c-899d-44e5-b820-b23371a662cd">
+
 float strength = vUv.y * 10.0;\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
 ### Pattern 7 - Striped pattern, horizontal stripes
+<img width="548" alt="7" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/b45bb148-a9e9-4441-bf98-5897f0b01601">
+
 float strength = mod(vUv.y * 10.0, 1.0);\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
@@ -335,13 +349,15 @@ float strength = 1.0 - abs(cnoise(vUv * 10.0));\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
 ### Pattern 49 - Noisy and blurry abstract pattern
+<img width="539" alt="49" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/bcc871b4-fe51-4277-8de5-54eb8d264d9a">
 
 float strength =sin(cnoise(vUv * 10.0) * 20.0);\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
 ### Pattern 50 - Noisy clean abstract pattern
+<img width="494" alt="50" src="https://github.com/DodoBey/shaderPatterns/assets/77416196/2f1a25ee-3870-4c22-bba6-5819e2dcb2f8">
 
 float strength =step(0.9,sin(cnoise(vUv * 10.0) * 20.0));\
 gl_FragColor = vec4(vec3(strength), 1.0);
 
-**I am not able to upload some pictures due to a limitation on github?👀**
+***Have fun!***
